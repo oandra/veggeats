@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.start-card{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    background-color: #94C86C;
+    height: 100vh;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.start-card-progress{
+    flex: 1;
+}
+
+.start-card-progress h3{
+    font-size: 11px;
+    color: white;
+    font-weight: 300;
+}
+
+.progress-bar{
+    margin-top: 10px;
+    width: 350px;
+    max-height: 5px;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+}
+
+.start-card-image{
+    flex: 1;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.start-card-text{
+    flex: 1;
+    text-align: center;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.start-card-text h1{
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.start-card-text p{
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.start-card-users{
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.start-card-users h2{
+    color: #fadeac;
+    font-size: 28px;
+}
+
+.start-card-users p{
+    color: white;
+    font-size: 11px;
+}
+
+
+.start-card-button{
+    flex: 1;
+    margin-bottom: 0px;
+}
+
+.start-card-button button{
+    font-size: 18px;
+    padding: 5% 10%;
+    border-radius: 24px;
+    color: #F7ECEC;
+    border: 2px solid #F7ECEC;
+    background-color: transparent;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
