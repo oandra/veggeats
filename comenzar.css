@@ -12,15 +12,20 @@
 .start-card{
     display: flex;
     flex-direction: column;
-    width: 375px;
+    width: 100vw;
     background-color: #94C86C;
     height: 100vh;
     align-items: center;
     padding: 10px 10px;
+    text-align: center;
+    justify-content: center;
+    padding: 48px 0;
 }
 
 .start-card-progress{
     flex: 1;
+    max-width: 100%;
+    width: 350px;
 }
 
 .start-card-progress h3{
@@ -29,15 +34,29 @@
     font-weight: 300;
 }
 
-.progress-bar{
+.start-card .start-card-progress::before{
+    content: "";
     margin-top: 10px;
-    width: 350px;
-    max-height: 5px;
-    background-color: #f9f9f9;
+    width: 100%;
+    height: 5px;
+    background-color: #d1d1cf;
     border-radius: 25px;
+    transition: 0.4s ease;
+    z-index: 1;
 }
 
-.start-card-image{
+
+.start-card .start-card-progress .progress{
+    margin-top: 10px;
+    width: 1%;
+    height: 5px;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    transition: 0.4s ease;
+    z-index: -1;
+}
+
+.start-card-logo{
     flex: 1;
     margin-top: 150px;
     margin-bottom: 150px;
@@ -48,6 +67,7 @@
     text-align: center;
     color: white;
     margin-bottom: 12px;
+    max-width: 400px;
 }
 
 .start-card-text h1{
@@ -60,6 +80,58 @@
     margin-bottom: 12px;
     font-size: 14px;
     line-height: 1.5;
+}
+
+.start-card-image{
+    display: none;
+    flex: 1;
+    margin: 50px 0;
+}
+
+.start-card-portions{
+    display: none;
+    flex: 1;
+    margin: 50px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-card-portions .btn-less{
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5% 8%;
+    border-radius: 24px;
+    color: #94C86C;
+    border: 2px solid #F7ECEC;
+    background-color: #F7ECEC;
+    font-family: 'Rubik', sans-serif;
+    margin: 6px 8px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer ;
+}
+
+.start-card-portions .input-portions{
+    flex: 1;
+}
+
+.start-card-portions .btn-add{
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5% 8%;
+    border-radius: 24px;
+    color: #94C86C;
+    border: 2px solid #F7ECEC;
+    background-color: #F7ECEC;
+    font-family: 'Rubik', sans-serif;
+    margin: 6px 8px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer ;
 }
 
 .start-card-users{
@@ -80,11 +152,16 @@
 
 
 .start-card-button{
-    flex: 1;
-    margin-bottom: 0px;
+    position: absolute;
+    margin-top: 77vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .start-card-button button{
+    flex: 1;
     font-size: 18px;
     padding: 5% 10%;
     border-radius: 24px;
@@ -92,6 +169,36 @@
     border: 2px solid #F7ECEC;
     background-color: transparent;
     font-family: 'Rubik', sans-serif;
+    margin: 6px 8px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer ;
+}
+
+.start-card-button button:focus{
+    outline: 0;
+}
+
+.start-card-button button:active{
+    transform: scale(0.97);
+}
+
+.start-card-button button:disabled{
+    visibility: hidden;
+}
+
+.start-card-button .btn-prev{
+    border: hidden;
+    font-size: 14px;
+}
+
+.start-card-button .btn-hidden{
+    visibility: hidden;
+}
+
+.start-card-login{
+    color: #fadeac;
 }
 
 

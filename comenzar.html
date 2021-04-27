@@ -11,25 +11,41 @@
     <section>   
         <article class="start-card">
             <div class="start-card-progress">
-                <h3>1/5: Bienvenido a Veggeats</h3>
-                <div class="progress-bar">      
+                <h3 id="progress-text">1/5: Bienvenido a Veggeats</h3>
+                <div class="progress" id="progress">
+                       
                 </div>
             </div>
-            <div class="start-card-image">
+            <div class="start-card-logo" id="card-logo">
                 <img src="./images/logo-light-green.png" alt="Veggeats" width="300px">
             </div>
             <div class="start-card-text">
-                <h1>Bienvenido al futuro de la alimentación</h1>
-                <p>Consigue reducir tu consumo de carne, conocer comida exquisita vegetariana o hacer que tu camino hacia el veganismo sea más placentero.</p>
+                <h1 id="card-title">Bienvenido al futuro de la alimentación</h1>
+                <p id="card-text">Consigue reducir tu consumo de carne, conocer comida exquisita vegetariana o hacer que tu camino hacia el veganismo sea más placentero.</p>
+            </div>
+            <div class="start-card-image" id="card-image">
+                <img src="./images/orange-eee.png" alt="orange" width="300px">
+            </div>
+            <div class="start-card-portions" id="card-portions">
+                <button class="btn-less" id="less">-</button>
+                <input type="number" class="input-portions" id="portions">
+                <button class="btn-add" id="add">+</button>
             </div>
             <div class="start-card-users">
-                <h2>259</h2>
-                <p>Personas usando Veggeats ahora</p>
+                <h2 id="bottom-title">259</h2>
+                <p id="bottom-text">Personas usando Veggeats ahora</p>
             </div>
             <div class="start-card-button">
-                <button>Comenzar</button>
+                <button class="btn-prev" id="prev">Regresar</button>
+                <button class="btn-next" id="next">Comenzar</button>
+                <button class="btn-hidden" id="hidden">Comenzar</button>
+            </div>
+            <div class="start-card-login">
+                <p>Ya tengo una cuenta</p>
             </div>
         </article>
     </section>
-</body>
+
+    <script src="./app.js"></script>
+</body> 
 </html>
